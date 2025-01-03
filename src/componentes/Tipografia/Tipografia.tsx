@@ -1,10 +1,10 @@
-import styled from "styled-components";
 import { componetes } from "../../styles/componente";
 import { estilosTipografia } from "../../styles/estilosTipografia";
+import componentesEstilizados from "./Tipografia.styles";
 
-type IkeyComponente = keyof typeof componetes
+type IkeyComponente = keyof typeof componetes;
+type IkeyVariante = keyof typeof estilosTipografia;
 
-type IkeyVariante = keyof typeof estilosTipografia
 interface PropsTipografia {
   texto: string;
   componente: IkeyComponente;
@@ -12,9 +12,6 @@ interface PropsTipografia {
 }
 
 export const Tipografia = ({ texto, componente, variante }: PropsTipografia) => {
-  const tag = componetes[componente];
-  const Componente = styled(tag)`
-    ${estilosTipografia[variante]}
-  `;
-  return (<Componente>{texto}</Componente>)
-}
+  const Componente = componentesEstilizados[`${componente}_${variante}`];
+  return (<Componente>{texto}</Componente>);
+};

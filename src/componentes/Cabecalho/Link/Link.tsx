@@ -14,10 +14,11 @@ const LinkEstilizado = styled.a`
 interface PropsLink {
   texto: string;
   path: string;
+  handleClick?: () => void
 }
 
-export const Link = ({ texto, path = "#" }: PropsLink) => {
-  return (<LinkEstilizado href={path} >
+export const Link = ({ texto, path = "#", handleClick }: PropsLink) => {
+  return (<LinkEstilizado href={path} onClick={handleClick}>
     {texto}
   </LinkEstilizado>)
 }

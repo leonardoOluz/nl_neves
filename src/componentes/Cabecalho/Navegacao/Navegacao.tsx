@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 const NavegacaoEstilizada = styled.nav`
   width: 50%;
+  text-align: center;
 `;
 
 interface PropsNavegacao {
