@@ -1,0 +1,107 @@
+import { IObjetoImagens } from "../../interface/UI";
+// Galeria
+import ralo from "../../assets/img/galeria/ralo.avif";
+import caixaGordura from "../../assets/img/galeria/caixa-gordura.avif";
+// Servicos
+import imgTorneira from "../../assets/img/servicos/trocaTorneira.avif";
+import imgSifao from "../../assets/img/servicos/TrocaSifao.avif";
+import imgFlexivel from "../../assets/img/servicos/trocaFlexivel.avif";
+import imgBomba from "../../assets/img/servicos/instalacaoBomba.avif";
+import imgPressurizada from "../../assets/img/servicos/instalacaoPressurizada.avif";
+import imgCaixaGordura from "../../assets/img/servicos/instalacaoCaixaGordura.avif";
+// Sobre Empresa
+import imagemTwo from "../../assets/img/carrossel/nlnevesTwo.avif";
+import imagemThree from "../../assets/img/carrossel/nlnevesthree.avif";
+import imagemFour from "../../assets/img/carrossel/nlnevesfour.avif";
+import imagemFerramentas from "../../assets/img/carrossel/MaletasFerramentas.avif";
+// Contato
+import imgInstagram from "../../assets/img/redes_sociais/instagram.png";
+import imgFacebook from "../../assets/img/redes_sociais/imgFacebook.png";
+import imgTiktok from "../../assets/img/redes_sociais/tiktok.png";
+
+export const galeria: IObjetoImagens[] = [
+  {
+    img: ralo,
+    alt: "imagem de um ralo da marca amanco no chão",
+    path: "../../assets/img/galeria/ralo.jpeg",
+    titulo: "Serviço de troca de ralo",
+    texto: "Serviço de troca de ralo no banheiro de uma residência",
+  },
+  {
+    img: caixaGordura,
+    alt: "caixa de gordura em manutenção",
+    path: "../../assets/img/galeria/caixa-gordura.jpeg",
+    titulo: "Reparo em caixa de gordura",
+    texto: "Serviço de reparo em uma caixa de gordura de um restaunte",
+  },
+];
+
+export const servicos: IObjetoImagens[] = [
+  {
+    img: imgTorneira,
+    alt: "imagem de uma torneira sendo instalada",
+    texto: "Instalamos diversos tipos de torneiras"
+  },
+  {
+    img: imgSifao,
+    alt: "imagem de um sifão sendo instalada",
+    texto: "Trabalhamos com troca e reparos em diversos tipos de sifões."
+  },
+  {
+    img: imgFlexivel,
+    alt: "imagem de um flexivel sendo instalada",
+    texto: "Fazemos trocas, reparos e instalação em diversos tipos de flexiveis."
+  },
+  {
+    img: imgBomba,
+    alt: "imagem de uma bomba instalada",
+    texto: "instalamos diversos tipos de bombas para esgotos e recalques"
+  },
+  {
+    img: imgPressurizada,
+    alt: "imagem de uma bomba pressirizadora instalada",
+    texto: "Trabalhamos com instalação de sistema de pressurização de agua potável.",
+  },
+  {
+    img: imgCaixaGordura,
+    alt: "imagem de uma caixa de gordura sendo instalada",
+    texto: "Trabalhamos com instalação e reparos em caixas de gordura e esgoto.",
+  },
+];
+
+export const carrossel: IObjetoImagens[] = [
+  {
+    img: imagemTwo,
+    alt: "Imagem de um rapaz segurando as maletas de ferramentas na duas mão de pé com o banner na parede de fundo escrito NL_NEVES",
+  },
+  {
+    img: imagemThree,
+    alt: "Imagem de um rapaz com o banner na parede de fundo escrito NL_NEVES e maletas de ferramentas na frente com panfletos e cartões dentro de outras maletas.",
+  },
+  {
+    img: imagemFour,
+    alt: "Imagem de um rapaz com o banner na parede de fundo escrito NL_NEVES e maletas de ferramentas por tras com cartões na mão.",
+  },
+  {
+    img: imagemFerramentas,
+    alt: "Imagem de diversas maletas de ferramentas no chão.",
+  },
+];
+
+export const redesSociais: IObjetoImagens[] = [
+  {
+    alt: "imagem da rede social instagram",
+    img: imgInstagram,
+    path: "https://www.instagram.com/nelinholedoneves",
+  },
+  {
+    alt: "imagem da rede social facebook",
+    img: imgFacebook,
+    path: "https://web.facebook.com/profile.php?id=100091657550071",
+  },
+  {
+    alt: "imagem da rede social tiktok",
+    img: imgTiktok,
+    path: "https://www.tiktok.com/@nl.neves",
+  },
+];

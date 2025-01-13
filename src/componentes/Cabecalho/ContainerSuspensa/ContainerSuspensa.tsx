@@ -5,7 +5,7 @@ const ContainerSuspensoEstilizado = styled.div`
   top: 291px;
   left: 0;
   right: 0;
-  bottom: 0;
+  height: 100vh;
   z-index: 0;
 `;
 

@@ -33,6 +33,10 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	color: ${({ theme }) => theme.cores.branco};
+	font-family: "Roboto", serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
 }
 ol, ul {
 	list-style: none;
@@ -91,5 +95,20 @@ select {
 	font-size: inherit;
 	font-weight: inherit;
 	font-family: inherit;
+}
+.link {
+    font-size: ${({ theme }) => theme.espacamentos.s};
+    line-height: ${({ theme }) => theme.espacamentos.m};
+    font-weight: 600;
+    box-sizing: border-box;
+	cursor: pointer;
+
+	&:hover {
+		color: ${({ theme }) => theme.cores.terciario};
+	}
+
+  @media screen and (min-width: 1024px){
+    font-size: ${({ theme }) => theme.espacamentos.m};
+  }
 }
 `;

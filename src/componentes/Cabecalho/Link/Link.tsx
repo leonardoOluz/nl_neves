@@ -1,15 +1,4 @@
-import styled from "styled-components";
-
-const LinkEstilizado = styled.a`
-    font-size: ${({ theme }) => theme.espacamentos.s};
-    line-height: ${({ theme }) => theme.espacamentos.xl};
-    font-weight: 600;
-    box-sizing: border-box;
-
-  @media screen and (min-width: 1024px){
-    font-size: ${({ theme }) => theme.espacamentos.m};
-  }
-`;
+import { Link } from 'react-scroll';
 
 interface PropsLink {
   texto: string;
@@ -17,8 +6,16 @@ interface PropsLink {
   handleClick?: () => void
 }
 
-export const Link = ({ texto, path = "#", handleClick }: PropsLink) => {
-  return (<LinkEstilizado href={path} onClick={handleClick}>
+export const Links = ({ texto, path = "#", handleClick }: PropsLink) => {
+
+  return (<Link
+    activeClass="active"
+    to={path}
+    smooth={true}
+    duration={1000}
+    onClick={handleClick}
+    className="link"
+  >
     {texto}
-  </LinkEstilizado>)
+  </Link>)
 }

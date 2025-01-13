@@ -1,11 +1,11 @@
 import styled from "styled-components"
 
 const ContainerEstilizado = styled.div`
-  width: 90%;
+  width: 80%;
   min-width: 27rem;
   padding: ${({ theme }) => theme.espacamentos.m};
   background-color: ${({ theme }) => theme.cores.terciario};
-  box-sizing: border-box;
+  z-index: 1;
   
   @media screen and (min-width: 660px){
     width: 35rem;
