@@ -3,6 +3,7 @@ import { Cabecalho } from "./componentes/Cabecalho/Cabecalho";
 import { EstiloGlobal } from "./componentes/EstiloGlobal/EstiloGlobal"
 import { Main } from "./componentes/Main/Main";
 import { ProviderTema } from "./componentes/ProviderTema/ProviderTema"
+import Rodape from "./componentes/Rodape/Rodape";
 import { Carrosel } from "./Pages/Carrossel/Carrossel";
 import { Contato } from "./Pages/Contato/Contato";
 import { Galeria } from "./Pages/Galeria/Galeria";
@@ -20,7 +21,8 @@ function App() {
       <Galeria />
       <Contato />
     </Main>
-    <BotaoTop/>
+    <Rodape />
+    <BotaoTop />
   </ProviderTema>)
 }
 

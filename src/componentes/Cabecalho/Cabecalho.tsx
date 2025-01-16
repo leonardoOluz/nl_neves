@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { Container } from "./Container/Container";
-import { Tipografia } from "../Tipografia/Tipografia";
 import { Navegacao } from "./Navegacao/Navegacao";
 import { ListaNavegacao } from "./ListaNavegacao/ListaNavegacao";
 import { useEffect, useState } from "react";
@@ -9,6 +7,7 @@ import { CgCloseR } from "react-icons/cg";
 import { LuSquareMenu } from "react-icons/lu";
 import { useHandleResize } from "../../hooks/useHandleResize";
 import { ContainerSuspenso } from "./ContainerSuspensa/ContainerSuspensa";
+import { SvgLogoNeves } from "../LogoNLNeves/SvgLogoNeves";
 
 const HeaderEstilizado = styled.header`
   display: flex;
@@ -43,9 +42,7 @@ export const Cabecalho = () => {
   }, [width])
 
   return (<HeaderEstilizado id="home">
-    <Container>
-      <Tipografia componente="h1" variante="h1" texto="NL_NEVES" />
-    </Container>
+    <SvgLogoNeves typeLogo="cabecalho" />
     {listaSuspensa && <ContainerSuspenso handleClick={() => setListaSuspensa(!listaSuspensa)} />}
 
     {btnSuspensa ? (

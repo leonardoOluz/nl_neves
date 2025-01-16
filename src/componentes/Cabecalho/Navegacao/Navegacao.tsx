@@ -2,7 +2,7 @@ import styled, { css } from "styled-components"
 
 const NavegacaoSuspensaEstilizada = css<{ $isopen?: boolean }>`
   position: absolute;
-  top: 96px;
+  top: 65px;
   left: 0 ;
   right: 0;
   z-index: 0;

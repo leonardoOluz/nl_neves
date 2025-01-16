@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <ellipse style="stroke: rgb(0, 0, 0); fill: rgb(187, 0, 0);" cx="250" cy="250" rx="250" ry="250"/>
+  <text style="fill: rgb(255, 255, 255); font-family: &quot;Lucida Calligraphy&quot;; font-size: 43px; letter-spacing: 0.8px; word-spacing: 1.3px; white-space: pre;" transform="matrix(2.298938, 0, 0, 9.278524, -185.291763, -757.134399)" x="106.403" y="121.469">NL</text>
+  <text style="fill: rgb(255, 255, 255); font-family: Adamina; font-size: 28px; white-space: pre;" x="135.594" y="402.924" transform="matrix(1.999009, 0, 0, 1.44749, -24.348652, -214.614746)">NEVES</text>
+  <defs>
+    <style bx:fonts="Adamina">@import url(https://fonts.googleapis.com/css2?family=Adamina%3Aital%2Cwght%400%2C400&amp;display=swap);</style>
+  </defs>
+  <path d="M 334.593 137.479 L 339.917 174.46 L 361.243 148.539 L 348.531 182.454 L 377.713 177.493 L 351.822 195.388 L 377.713 213.283 L 348.531 208.322 L 361.243 242.237 L 339.917 216.316 L 334.593 253.297 L 329.269 216.316 L 307.943 242.237 L 320.655 208.322 L 291.473 213.283 L 317.364 195.388 L 291.473 177.493 L 320.655 182.454 L 307.943 148.539 L 329.269 174.46 Z" bx:shape="star 334.593 195.388 45.339 57.909 0.38 10 1@73f390df" style="stroke: rgb(0, 0, 0); fill: rgb(255, 255, 255);"/>
+</svg>

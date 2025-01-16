@@ -9,14 +9,15 @@ const BotaoToEstilizado = styled.button`
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  bottom: 1.5rem;
+  bottom: 10.5rem;
   right: 1.5rem;
   font-weight: 600;
   border-radius: 1.8rem;
-  border: 1px solid ${({ theme }) => theme.cores.terciario};
+  border: 1px solid ${({ theme }) => theme.cores.primaria};
   color: ${({ theme }) => theme.cores.preto};
   cursor: pointer;
-  transition: transform 1200ms;
+  transition: transform 200ms;
+
   svg{
     display: block;
   }
@@ -34,16 +35,17 @@ export const BotaoTop = () => {
   }
 
   return (<>
-    {isButtonVisible && <Link
-      to="home"
-      smooth={true}
-      duration={900}
-    >
+    {isButtonVisible &&
       <BotaoToEstilizado
         onClick={scrollTop}
       >
+        <Link
+          to="home"
+          smooth={true}
+          duration={900}
+        ></Link>
         <FaChevronUp size={25} />
         Topo
       </BotaoToEstilizado>
-    </Link>}</>)
+    }</>)
 };

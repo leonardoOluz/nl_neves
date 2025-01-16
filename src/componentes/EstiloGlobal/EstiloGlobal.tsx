@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	background-color: ${({theme}) => theme.cores.branco};
 	line-height: 1;
 	color: ${({ theme }) => theme.cores.branco};
 	font-family: "Roboto", serif;

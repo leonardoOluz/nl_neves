@@ -2,6 +2,14 @@ import { IObjetoImagens } from "../../interface/UI";
 // Galeria
 import ralo from "../../assets/img/galeria/ralo.avif";
 import caixaGordura from "../../assets/img/galeria/caixa-gordura.avif";
+import cavalete from "../../assets/img/galeria/instalacaoCavaletes.avif";
+import ceramica from "../../assets/img/galeria/instalacaoCeramica.avif";
+import tubulacaoEsgoto from "../../assets/img/galeria/instalacaoEsgotoWC.avif";
+import pontoBebedor from "../../assets/img/galeria/instalacaoPontoAguaEsgotoBebedor.avif";
+import esgoto from "../../assets/img/galeria/instalacaoPontoEsgoto.avif";
+import pressurizadora from "../../assets/img/galeria/instalacaoPressurizador.avif";
+import aguaEsgoto from "../../assets/img/galeria/instalacaoRaloWC.avif";
+
 // Servicos
 import imgTorneira from "../../assets/img/servicos/trocaTorneira.avif";
 import imgSifao from "../../assets/img/servicos/TrocaSifao.avif";
@@ -18,29 +26,70 @@ import imagemFerramentas from "../../assets/img/carrossel/MaletasFerramentas.avi
 import imgInstagram from "../../assets/img/redes_sociais/instagram.png";
 import imgFacebook from "../../assets/img/redes_sociais/imgFacebook.png";
 import imgTiktok from "../../assets/img/redes_sociais/tiktok.png";
+import imgYoutube from "../../assets/img/redes_sociais/youtube.png";
 
 export const galeria: IObjetoImagens[] = [
   {
     img: ralo,
     alt: "imagem de um ralo da marca amanco no chão",
-    path: "../../assets/img/galeria/ralo.jpeg",
-    titulo: "Serviço de troca de ralo",
+    titulo: "TROCA DE RALO NO WC.",
     texto: "Serviço de troca de ralo no banheiro de uma residência",
   },
   {
     img: caixaGordura,
     alt: "caixa de gordura em manutenção",
-    path: "../../assets/img/galeria/caixa-gordura.jpeg",
-    titulo: "Reparo em caixa de gordura",
+    titulo: "MANUTENÇÃO EM CAIXA DE GORDURA.",
     texto: "Serviço de reparo em uma caixa de gordura de um restaunte",
   },
+  {
+    img: cavalete,
+    alt: "rapaz instando cavaletes para medidor de agua na entrada de um portão",
+    titulo: "INSTALAÇÃO DE CAVALETES D'AGUA.",
+    texto: "Serviço de instalação de cavaletes para medidor de agua na entrada de um portão",
+  },
+  {
+    img: ceramica,
+    alt: "rapaz de camisa vermelha e calça cinza com um objeto não identificado na mão de frente a janela com uma parede faltando revestimento.",
+    titulo: "REPOSIÇÃO DE PEÇAS DE CERÂMICA.",
+    texto: "Serviço de revestimento de cermica na cozinha de uma residência.",
+  },
+  {
+    img: tubulacaoEsgoto,
+    alt: "Tubulação exposta em um contra-piso de um WC em construção.",
+    titulo: "INSTALAÇÃO DE ESGOTO EM WC.",
+    texto: "Serviço de instalação de esgoto para um WC em construção de um residência.",
+  },
+  {
+    img: pontoBebedor,
+    alt: "Parede branco com aberturas e dentro das aberturas passado os canos de agua e esgoto para instalação de dois pontos para bebedor e abaixo um ponto de esgoto.",
+    titulo: "INFRA-ESTRUTURA PARA BEBEDOR.",
+    texto: "Serviço de instalação de dois pontos de agua para os bebedores com um ponto de esgoto.",
+  },
+  {
+    img: esgoto,
+    alt: "contra-piso aberto com tubulações de esgoto interligadas.",
+    titulo: "INSTALAÇÃO DE ESGOTO PARA COZINHA.",
+    texto: "Instalação do esgoto para a pia da cozinha em um residência.",
+  },
+  {
+    img: pressurizadora,
+    alt: "uma bomba instalada junto ao cano de pvc por cima de uma laje.",
+    titulo: "BOMBA DE PRESSURIZAÇÃO DE REDE DE AGUA POTAVEL.",
+    texto: "Instalação de bomba pressurizadora de rede de agua potavel em uma residência com baixa pressão de agua.",
+  },
+  {
+    img: aguaEsgoto,
+    alt: "Canos de agua e esgoto no rodape da parede entrando para o chão de um wc",
+    titulo: "SERVIÇO DE PONTO DE AGUA E ESGOTO PARA UM WC.",
+    texto: "Feito a instalação de um ponto de agua e esgoto para um wc em uma residência.",
+  },  
 ];
 
 export const servicos: IObjetoImagens[] = [
   {
     img: imgTorneira,
     alt: "imagem de uma torneira sendo instalada",
-    texto: "Instalamos diversos tipos de torneiras"
+    texto: "Trabalhamos com diversos tipos de torneiras, cozinha, cubas, Lavabo, aréa de Gourmet e torneiras inteligentes, "
   },
   {
     img: imgSifao,
@@ -103,5 +152,10 @@ export const redesSociais: IObjetoImagens[] = [
     alt: "imagem da rede social tiktok",
     img: imgTiktok,
     path: "https://www.tiktok.com/@nl.neves",
+  },
+  {
+    alt: "imagem da rede social youtube",
+    img: imgYoutube,
+    path: "https://youtube.com/@nelinho-xc2lr?si=doTZkSQqK3L_mY0S",
   },
 ];

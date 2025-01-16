@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 const ListaEstilizada = styled.ul<{ $flexDirection: string }>`
+  text-align: center;
   display: flex;
   flex-direction: ${({ $flexDirection }) => $flexDirection};
   flex-wrap: wrap;

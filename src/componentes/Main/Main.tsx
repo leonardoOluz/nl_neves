@@ -3,10 +3,10 @@ import styled from "styled-components";
 const MainEstilizado = styled.main`
 `;
 
-interface PropsConteudoPrincipal {
+interface PropsMain {
   children: React.ReactNode
 }
 
-export const Main = ({ children }: PropsConteudoPrincipal) => {
+export const Main = ({ children }: PropsMain) => {
   return (<MainEstilizado>{children}</MainEstilizado>)
 };

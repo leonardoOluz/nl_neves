@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const ContainerSuspensoEstilizado = styled.div`
   position: fixed;
-  top: 291px;
+  top: 267px;
   left: 0;
   right: 0;
   height: 100vh;

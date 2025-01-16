@@ -4,10 +4,11 @@ import styled, { css } from "styled-components";
 const SectionFinal = css`
   border: none;
   box-shadow: none;
+  text-align: center;
 `;
 
 const SecaoEstilizada = styled.section<{ $secao?: boolean }>`
-  color: ${({ theme }) => theme.cores.preto};
+  color: ${({ theme }) => theme.cores.primaria};
   padding: ${({ theme }) => theme.espacamentos.xxl} 0;
     
     ${({ $secao }) => $secao && SectionFinal}

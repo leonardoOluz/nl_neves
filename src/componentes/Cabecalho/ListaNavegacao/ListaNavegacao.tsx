@@ -5,7 +5,9 @@ import { Links } from "../Link/Link";
 const ListaSuspensaEstilizada = css<{ $isopen?: boolean, $dropdown?: boolean }>`
   display: flex;
   width: 100%;
-  padding-top: .5rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  gap: 1rem;
   flex-direction: column;
   align-items: center;
   text-align: center;
