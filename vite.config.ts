@@ -22,7 +22,7 @@ export default defineConfig({
             type: 'image/svg+xml',
           },
           {
-            src: '/nl_neves.svg', // Substitua pelo caminho do seu ícone
+            src: '/favicon.svg', // Substitua pelo caminho do seu ícone
             sizes: '512x512',
             type: 'image/svg+xml',
           },
