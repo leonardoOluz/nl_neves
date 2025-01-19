@@ -9,8 +9,7 @@ const SectionFinal = css`
 
 const SecaoEstilizada = styled.section<{ $secao?: boolean }>`
   color: ${({ theme }) => theme.cores.primaria};
-  padding: ${({ theme }) => theme.espacamentos.xxl} 0;
-    
+  margin:${({ theme }) => theme.espacamentos.xl} 0;
     ${({ $secao }) => $secao && SectionFinal}
 `;
 

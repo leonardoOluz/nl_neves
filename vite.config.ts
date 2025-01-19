@@ -9,20 +9,20 @@ export default defineConfig({
       registerType: 'autoUpdate',
       injectRegister: 'auto',
       manifest: {
-        name: 'NL_NEVES',
-        short_name: 'NL_NEVES',
+        name: 'NL NEVES',
+        short_name: 'NL NEVES',
         description: 'NL_NEVES - Solução Completa em Hidráulica',
-        theme_color: '#ffffff',
-        background_color: '#BB000',
+        theme_color: '#fff',
+        background_color: '#BB0000',
         display: 'standalone',
         icons: [
           {
-            src: '/favicon.svg', // Substitua pelo caminho do seu ícone
+            src: '/Nlneves.svg', // Substitua pelo caminho do seu ícone
             sizes: '192x192',
             type: 'image/svg+xml',
           },
           {
-            src: '/favicon.svg', // Substitua pelo caminho do seu ícone
+            src: '/nl_neves.svg', // Substitua pelo caminho do seu ícone
             sizes: '512x512',
             type: 'image/svg+xml',
           },

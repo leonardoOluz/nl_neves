@@ -13,6 +13,7 @@ export const Contato = () => {
   return (<Secao id="contato" secao ariaLabel="Contato e redes sociais">
     <SubHeader>
       <Tipografia componente="h2" variante="h2" texto="Entre em contato conosco" />
+      <Tipografia componente="body" variante="h3" texto="Sua casa ou empresa precisa de um cuidado especial? Conte com a NL_NEVES. Atendemos toda a Zona Leste." />
     </SubHeader>
     <DivisaoConteudo divTipografia="divContato">
 

@@ -3,8 +3,12 @@ import styled, { css } from "styled-components"
 const divContato = css`
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: ${({ theme }) => theme.espacamentos.xs};
   gap: 0;
+
+  @media screen and (min-width: 660px){
+    padding: ${({ theme }) => theme.espacamentos.l};
+  }
 `;
 
 const divTipografia = css`
