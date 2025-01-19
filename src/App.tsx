@@ -1,6 +1,6 @@
 import { BotaoTop } from "./componentes/BotaoTop/BotaoTop";
 import { Cabecalho } from "./componentes/Cabecalho/Cabecalho";
-import { EstiloGlobal } from "./componentes/EstiloGlobal/EstiloGlobal"
+import { EstiloGlobal } from "./componentes/EstiloGlobal/EstiloGlobal";
 import { Main } from "./componentes/Main/Main";
 import { ProviderTema } from "./componentes/ProviderTema/ProviderTema"
 import Rodape from "./componentes/Rodape/Rodape";

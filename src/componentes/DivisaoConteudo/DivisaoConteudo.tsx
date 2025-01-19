@@ -14,12 +14,17 @@ const divContato = css`
 const divTipografia = css`
  justify-content: flex-start;
  padding: ${({ theme }) => theme.espacamentos.m};
+ 
+ @media screen and (min-width: 660px){
+   width: 70rem;  
+   flex-direction: column;
+  }
+  `
 
-@media screen and (min-width: 660px){
-  width: 70rem;  
-  flex-direction: column;
-}
-`
+const divGaleria = css`
+  padding: ${({ theme }) => theme.espacamentos.xl};
+  box-sizing: border-box;
+`;
 
 const DivisaoEstilizada = styled.div<{ $divisao?: string }>`
   display: flex;
@@ -33,6 +38,8 @@ const DivisaoEstilizada = styled.div<{ $divisao?: string }>`
         return divTipografia;
       case "divContato":
         return divContato;
+      case "divGaleria":
+        return divGaleria;
       default:
         break;
     }
@@ -41,7 +48,7 @@ const DivisaoEstilizada = styled.div<{ $divisao?: string }>`
 
 interface PropsContainerDivisao {
   children: React.ReactNode;
-  divTipografia?: "divTipografia" | "divContato";
+  divTipografia?: "divTipografia" | "divContato" | "divGaleria";
 }
 
 export const DivisaoConteudo = ({ children, divTipografia }: PropsContainerDivisao) => {

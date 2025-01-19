@@ -12,6 +12,7 @@ const BotaoToEstilizado = styled.button`
   align-items: center;
   padding: 1rem ;
   border-radius: 100%;
+  border: 2px solid ${({ theme }) => theme.cores.secundaria};
   background-color: ${({ theme }) => theme.cores.preto};
   color: ${({ theme }) => theme.cores.branco};
   box-shadow: 10px 14px 8px rgba(0, 0, 0, 0.4);
@@ -20,6 +21,7 @@ const BotaoToEstilizado = styled.button`
 
   &:hover{
     transform: scale(1.1);
+    border-color: ${({ theme }) => theme.cores.preto};
     background-color: ${({ theme }) => theme.cores.terciario};
   }
 `;

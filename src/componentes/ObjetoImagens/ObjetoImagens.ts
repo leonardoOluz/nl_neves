@@ -9,6 +9,16 @@ import pontoBebedor from "../../assets/img/galeria/instalacaoPontoAguaEsgotoBebe
 import esgoto from "../../assets/img/galeria/instalacaoPontoEsgoto.avif";
 import pressurizadora from "../../assets/img/galeria/instalacaoPressurizador.avif";
 import aguaEsgoto from "../../assets/img/galeria/instalacaoRaloWC.avif";
+import calha from "../../assets/img/galeria/concertoCalha.avif";
+import tubulacaoRegistrosOne from "../../assets/img/galeria/instalacaoTubulacaoRegistroValvulas.avif";
+import tubulacaoRegistrosTwo from "../../assets/img/galeria/InstalacaoRegistroTubulacao.avif";
+import raloGaragemOne  from "../../assets/img/galeria/raloGaragem.avif";
+import raloGaragemTwo  from "../../assets/img/galeria/raloGaragem2.avif";
+import trocaTubulacao  from "../../assets/img/galeria/trocaTubulacaoEsgoto.avif";
+import trocaTubulacaoCaixa  from "../../assets/img/galeria/tubulacaoEsgotoCaixa.avif";
+import trocaTubulacaoCozinhaOne  from "../../assets/img/galeria/tubulacaoEsgotoCozinha.avif";
+import trocaTubulacaoCozinhaTwo  from "../../assets/img/galeria/tubulacaoEsgotoCozinha2.avif";
+import tubulacaoTorneiras  from "../../assets/img/galeria/tubulacaoTorneirasPia.avif";
 
 // Servicos
 import imgTorneira from "../../assets/img/servicos/trocaTorneira.avif";
@@ -82,7 +92,67 @@ export const galeria: IObjetoImagens[] = [
     alt: "Canos de agua e esgoto no rodape da parede entrando para o chão de um wc",
     titulo: "SERVIÇO DE PONTO DE AGUA E ESGOTO PARA UM WC.",
     texto: "Feito a instalação de um ponto de agua e esgoto para um wc em uma residência.",
+  },
+  {
+    img: calha,
+    alt: "Canos de agua e esgoto no rodape da parede entrando para o chão de um wc",
+    titulo: "SERVIÇO DE PONTO DE AGUA E ESGOTO PARA UM WC.",
+    texto: "Feito a instalação de um ponto de agua e esgoto para um wc em uma residência.",
+  },
+  {
+    img: tubulacaoRegistrosOne,
+    alt: "Canos de agua e esgoto no rodape da parede entrando para o chão de um wc",
+    titulo: "SERVIÇO DE PONTO DE AGUA E ESGOTO PARA UM WC.",
+    texto: "Feito a instalação de um ponto de agua e esgoto para um wc em uma residência.",
+  },
+  {
+    img: tubulacaoRegistrosTwo,
+    alt: "Canos de agua e esgoto no rodape da parede entrando para o chão de um wc",
+    titulo: "SERVIÇO DE PONTO DE AGUA E ESGOTO PARA UM WC.",
+    texto: "Feito a instalação de um ponto de agua e esgoto para um wc em uma residência.",
   },  
+  {
+    img: raloGaragemOne,
+    alt: "Canos de agua e esgoto no rodape da parede entrando para o chão de um wc",
+    titulo: "SERVIÇO DE PONTO DE AGUA E ESGOTO PARA UM WC.",
+    texto: "Feito a instalação de um ponto de agua e esgoto para um wc em uma residência.",
+  },
+  {
+    img: raloGaragemTwo,
+    alt: "Canos de agua e esgoto no rodape da parede entrando para o chão de um wc",
+    titulo: "SERVIÇO DE PONTO DE AGUA E ESGOTO PARA UM WC.",
+    texto: "Feito a instalação de um ponto de agua e esgoto para um wc em uma residência.",
+  },
+  {
+    img: trocaTubulacao,
+    alt: "Canos de agua e esgoto no rodape da parede entrando para o chão de um wc",
+    titulo: "SERVIÇO DE PONTO DE AGUA E ESGOTO PARA UM WC.",
+    texto: "Feito a instalação de um ponto de agua e esgoto para um wc em uma residência.",
+  },
+  {
+    img: trocaTubulacaoCaixa,
+    alt: "Canos de agua e esgoto no rodape da parede entrando para o chão de um wc",
+    titulo: "SERVIÇO DE PONTO DE AGUA E ESGOTO PARA UM WC.",
+    texto: "Feito a instalação de um ponto de agua e esgoto para um wc em uma residência.",
+  },
+  {
+    img: trocaTubulacaoCozinhaOne,
+    alt: "Canos de agua e esgoto no rodape da parede entrando para o chão de um wc",
+    titulo: "SERVIÇO DE PONTO DE AGUA E ESGOTO PARA UM WC.",
+    texto: "Feito a instalação de um ponto de agua e esgoto para um wc em uma residência.",
+  },
+  {
+    img: trocaTubulacaoCozinhaTwo,
+    alt: "Canos de agua e esgoto no rodape da parede entrando para o chão de um wc",
+    titulo: "SERVIÇO DE PONTO DE AGUA E ESGOTO PARA UM WC.",
+    texto: "Feito a instalação de um ponto de agua e esgoto para um wc em uma residência.",
+  },
+  {
+    img: tubulacaoTorneiras,
+    alt: "Canos de agua e esgoto no rodape da parede entrando para o chão de um wc",
+    titulo: "SERVIÇO DE PONTO DE AGUA E ESGOTO PARA UM WC.",
+    texto: "Feito a instalação de um ponto de agua e esgoto para um wc em uma residência.",
+  },
 ];
 
 export const servicos: IObjetoImagens[] = [
