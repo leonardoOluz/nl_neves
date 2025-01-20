@@ -6,51 +6,40 @@ import { Lista } from "../../componentes/Lista/ListaComponente"
 import { ItemLista } from "../../componentes/Lista/ItemLista/ItemComponente"
 import { FigureComponente } from "../../componentes/FigureComponente/FigureComponente"
 import { FigcaptionComponente } from "../../componentes/FigureComponente/FigcaptionComponente/FigcaptionComponente";
-import { galeria } from "../../componentes/ObjetoImagens/ObjetoImagens"
-import { useEffect, useState } from "react"
-import { IObjetoImagens } from "../../interface/UI"
 import styled from "styled-components"
 import { DivisaoConteudo } from "../../componentes/DivisaoConteudo/DivisaoConteudo"
+import useUpdateGaleria from "../../hooks/useUpdateGaleria"
+import Loader from "../../componentes/Loader/Loader"
 
 const BotaoMaisEstilizado = styled.button`
   background-color: ${({ theme }) => theme.cores.preto};
   color: ${({ theme }) => theme.cores.branco};
   border-radius: 8rem;
   border: 2px solid ${({ theme }) => theme.cores.secundaria};
-  padding: ${({ theme }) => theme.espacamentos.s} ${({ theme }) => theme.espacamentos.m};
+  padding: 1rem ${({ theme }) => theme.espacamentos.s};
   box-shadow: 10px 14px 8px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   box-sizing: border-box;
   transition: transform 200ms;
+  
+  &:hover,
+  &:active {
+    transform: scale(1.05);
+  }
 
-  &:hover{
-    transform: scale(1.1);
+
+@media screen and(min-width: 660px) {
+    &:hover,
+    &:active{
+    transform: scale(1.05);
     border-color: ${({ theme }) => theme.cores.preto};
     background-color: ${({ theme }) => theme.cores.terciario};
   }
+}
 `;
 
 export const Galeria = () => {
-  const [textoBtn, setTextoBtn] = useState("Ver mais")
-  const [galeriaMais, setGaleriaMais] = useState<IObjetoImagens[]>(galeria.slice(0, 4))
-
-  useEffect(() => {
-    if (galeriaMais.length < galeria.length) {
-      setTextoBtn("Ver mais")
-    } else {
-      setTextoBtn("Ver menos")
-    }
-  }, [galeriaMais])
-
-  const handleClick = () => {
-    if (galeriaMais.length < galeria.length) {
-      setGaleriaMais((prev) => {
-        return galeria.slice(0, prev.length + 2)
-      })
-    } else {
-      setGaleriaMais(galeria.slice(0, 4))
-    }
-  }
+  const { handleClick, textoBtn, galeriaMais } = useUpdateGaleria();
 
   return (<Secao id="galeria" ariaLabel="galeria">
     <SubHeader>
@@ -71,9 +60,9 @@ export const Galeria = () => {
       ))}
     </Lista>
     <DivisaoConteudo divTipografia="divGaleria">
-      <BotaoMaisEstilizado type="button" onClick={handleClick} >
-        <Tipografia componente="body" variante="h2" texto={textoBtn} />
-      </BotaoMaisEstilizado>
+      {textoBtn ? <BotaoMaisEstilizado aria-label="botao ver mais" type="button" onClick={handleClick} >
+        <Tipografia componente="body" variante="body" texto={textoBtn} />
+      </BotaoMaisEstilizado> : <Loader />}
     </DivisaoConteudo>
   </Secao>)
 }

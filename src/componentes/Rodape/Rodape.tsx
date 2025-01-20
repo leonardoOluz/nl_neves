@@ -30,7 +30,7 @@ const DivRodape = styled.div`
 const Rodape = () => {
   return (<RodapeEstilizado>
     <DivRodape>
-      <Tipografia componente="body" variante="body" texto="Contato: (11) 97706-6344  (17) 98200-6345" />
+      <Tipografia componente="body" variante="body" texto="Contatos: (11) 97706-6344  (17) 98200-6345" />
     </DivRodape>
   </RodapeEstilizado>)
 };

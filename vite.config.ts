@@ -18,12 +18,12 @@ export default defineConfig({
         icons: [
           {
             src: '/Nlneves.svg', // Substitua pelo caminho do seu ícone
-            sizes: '192x192',
+            sizes: '254x254',
             type: 'image/svg+xml',
           },
           {
             src: '/favicon.svg', // Substitua pelo caminho do seu ícone
-            sizes: '512x512',
+            sizes: '876x876',
             type: 'image/svg+xml',
           },
         ],
