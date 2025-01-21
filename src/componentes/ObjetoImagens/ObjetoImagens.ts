@@ -138,17 +138,16 @@ export const galeria: IObjetoImagens[] = [
   {
     img: trocaTubulacaoCozinhaOne,
     alt: "Uma casa com o chão rasgado passando canos de esgotos com duas saidas do tubo para cima.",
-    titulo: "SERVIÇO DE INSTALAÇÃO DE ENCAMAMENTO DA COZINHA.",
-    texto: "Foi instalado encamamento da cozinha em uma obra residêncial.",
+    titulo: "SERVIÇO DE INSTALAÇÃO DE ENCANAMENTO DA COZINHA.",
+    texto: "Foi instalado encanamento da cozinha em uma obra residêncial.",
   },
   {
     img: trocaTubulacaoCozinhaTwo,
     alt: "Uma casa com o chão rasgado passando canos de esgotos com duas saidas do tubo para cima.",
-    titulo: "SERVIÇO DE INSTALAÇÃO DE ENCAMAMENTO DA COZINHA.",
-    texto: "Continuação do encamamento da cozinha em uma obra residêncial.",
+    titulo: "SERVIÇO DE INSTALAÇÃO DE ENCANAMENTO DA COZINHA.",
+    texto: "Continuação do encanamento da cozinha em uma obra residêncial.",
   },
   {
-    /* Verificar imagens, titulos e  texto */
     img: tubulacaoTorneiras,
     alt: "Parede com azulejos marrom estilo tijolinho de barro, com abertura para tubulação de agua, ",
     titulo: "SERVIÇO DE REPARO EM TUBULAÇÃO DAS TORNEIRAS DO BEBEDOR.",
